@@ -15,6 +15,3 @@ readme = "README.md"
 classifiers = [
     "License :: OSI Approved :: MIT License",
 ]
-
-[project.scripts]
-Analysis = "Analysis:load_data"
