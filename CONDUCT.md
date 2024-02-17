@@ -1,0 +1,1 @@
+# This is Code of Conduct file

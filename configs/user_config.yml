@@ -1,0 +1,7 @@
+ntfy_topic: "notification_pokenmon_data"
+plot_color: "skyblue"
+plot_title: "Pokemon Analysis"
+plot_x_axis_title: "Pokemon Types"
+plot_y_axis_title: "Count"
+figure_size: (10, 6)
+default_save_path: "Pokemon_Analysis.pdf"

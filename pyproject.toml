@@ -1,0 +1,20 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "Analysis"
+authors = [
+    {name = "Manthan Panwala", email = "mspanwala8@gmail.com"},
+]
+description = "Building software assignment"
+version = "0.1.0"
+dependencies = ["matplotlib", "numpy"]
+requires-python = ">=3.10.0"
+readme = "README.md"
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+]
+
+[project.scripts]
+Analysis = "Analysis:load_data"
