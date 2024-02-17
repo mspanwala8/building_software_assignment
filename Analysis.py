@@ -72,7 +72,7 @@ class Analysis():
     
 if __name__ == "__main__":
 
-    analysis_instance = Analysis("configs/analysis_config.yml")
+    analysis_instance = Analysis("config.yml")
 
     base_url = analysis_instance.get_value("base_url")
     param_type = analysis_instance.get_value('param_type')
