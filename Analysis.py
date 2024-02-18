@@ -38,11 +38,11 @@ analysis_obj : Analysis
 
 class Analysis():
 
-    def __init__(self, analysis_config: str) -> None:
-        CONFIG_PATHS = ['configs/system_config.yml', 'configs/user_config.yml', 'configs/job_file.yml']
+    def __init__(self, config: str) -> None:
+        CONFIG_PATHS = ['configs/system_config.yml', 'configs/user_config.yml', 'configs/job_file.yml','configs/config.yml']
 
         # add the analysis config to the list of paths to load
-        paths = CONFIG_PATHS + [analysis_config]
+        paths = CONFIG_PATHS 
 
         # initialize empty dictionary to hold the configuration
         config = {}
