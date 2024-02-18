@@ -22,7 +22,7 @@ import numpy
 Load config into an Analysis object
 
 Load system-wide configuration from `configs/system_config.yml`, user configuration from
-`configs/user_config.yml`, and `configs/job_file.yml`
+`configs/user_config.yml`, and the specified analysis configuration file
 
 Parameters
 ----------
@@ -36,7 +36,7 @@ analysis_obj : Analysis
 
 """
 
-class Analysis():
+class Analysis(analysis_config:str):
 
     def __init__(self, analysis_config: str) -> None:
         CONFIG_PATHS = ['configs/system_config.yml', 'configs/user_config.yml']
