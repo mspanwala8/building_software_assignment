@@ -81,8 +81,8 @@ if __name__ == "__main__":
     # Set up logging
     logging.basicConfig(filename='analysis.log', level=logging.INFO)
 
-    # Define functions for data analysis
-    def load_data(url) -> None:
+#Function for data load    
+def load_data(url) -> None:
 
         """
         Retrieves data from the specified URL.
@@ -102,8 +102,9 @@ if __name__ == "__main__":
         except Exception as e:
             logging.error(f"Error retrieving data: {e}")
             return None
-
-    def compute_analysis(data):
+            
+#Function for data analysis 
+def compute_analysis(data):
         """
         Analyzes the data retrieved from PokeAPI.
 
@@ -141,8 +142,8 @@ if __name__ == "__main__":
 
         return type_count, type_distribution, most_common_types, data
 
-
-    def plot_data(pokemon_types,counts,plot_color) -> plt.Figure:
+#Function for data visualization 
+def plot_data(pokemon_types,counts,plot_color) -> plt.Figure:
         """
         Plots the data using matplotlib.
 
@@ -185,8 +186,8 @@ if __name__ == "__main__":
         except Exception as e:
             print(f"Error plotting data: {e}")
 
-    
-    def notify_done() -> None:
+#Function for user notification   
+def notify_done() -> None:
 
         """
         Notify the user that analysis is complete.
@@ -220,7 +221,7 @@ if __name__ == "__main__":
             print(f"Error sending notification: {str(e)}")
 
 
-    if __name__ == "__main__":
+if __name__ == "__main__":
     # Retrieve data from PokeAPI
         pokeapi_url = f"{base_url}/{param_type}"
         data = load_data(pokeapi_url)
